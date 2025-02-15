@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Oleo+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Colonne generiche */
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.left-column{
+    margin-left: 40px;
+}
+
+.ring {
+    position: relative;
+    width: 650px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ring i {
+    position: absolute;
+    inset: 0;
+    border: 2px solid #020202;
+    transition: 0.5s;
+}
+.ring i:nth-child(1) {
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+    border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+    animation: animate2 10s linear infinite;
+}
+.ring:hover i {
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/* Stile specifico per la colonna di destra */
+.right-column {
+    gap: 20px; /* Spaziatura tra i bottoni */
+    z-index: 10;
+}
+
+/* Cambia solo il font del nome della colonna */
+.column-title {
+    font-family: "Libre Caslon Display", serif;
+    font-size: 52px;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.custom-button {
+    width: 240px;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    border: none; /* Rimuovo il bordo iniziale */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Bigshot One", serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    overflow: hidden;
+}
+
+.custom-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out;
+}
+
+.custom-button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s ease-in-out 0.2s;
+}
+
+.custom-button span::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0;
+    background: white;
+    transition: height 0.3s ease-in-out 0.1s;
+}
+
+.custom-button span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0;
+    background: white;
+    transition: height 0.3s ease-in-out 0.3s;
+}
+
+.custom-button:hover::before,
+.custom-button:hover::after {
+    width: 100%;
+}
+
+.custom-button:hover span::before,
+.custom-button:hover span::after {
+    height: 100%;
+}
+
+
+
+
+
+
+
+

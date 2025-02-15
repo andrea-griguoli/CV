@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Oleo+Script:wght@400;700&display=swap');
+
+.navbar{
+    margin-top: 60px;
+}
+
+.line-container {
+    display: flex;
+    align-items: center; /* Allinea tutto sulla stessa riga */
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+}
+
+.line-left {
+    height: 2px;
+    background-color: white;
+    width: 85%;
+}
+.line-right{
+    height: 2px;
+    background-color: white;
+    width: 10%;
+}
+
+.ag {
+    margin: 0 10px; /* Spazio ai lati della sigla */
+    color: white;
+    font-size: 48px;
+    white-space: nowrap;
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 5px;
+    line-height: 2px;
+}
+.ag:hover{
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;  /* Disposizione orizzontale dei bottoni */
+    width: 80%;
+}
+
+.navbar-button, .navbar-button-active {
+    all: unset;  /* Rimuove tutti gli stili di base del bottone */
+    background-color: transparent;  /* Rimuove il colore di sfondo */
+    border: none;  /* Rimuove il bordo */
+    color: #7e7e7e;  /* Colore del testo grigio */
+    padding: 20px 80px;  /* Padding desiderato */
+    font-size: 20px;
+    cursor: pointer;
+    font-family: "Bigshot One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.navbar-button:hover {
+    background-color: transparent;  /* Nessun cambiamento al passaggio del mouse */
+    color: #7e7e7e;  /* Nessun cambiamento nel colore del testo */
+    border: none;  /* Nessun cambiamento nel bordo */
+}
+
+.navbar-button-active {
+    background-color: transparent;
+    border: 2px solid white;
+    border-bottom: none;
+    color: white;
+}
+
+.navbar-button span{
+    transition: .3s linear
+}
+
+.navbar-button:hover span{
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.82),
+    0 0 10px rgba(255, 255, 255, 0.84),
+    0 0 20px rgba(255, 255, 255, 0.82);
+}
+
