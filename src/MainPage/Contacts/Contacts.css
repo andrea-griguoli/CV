@@ -23,7 +23,7 @@
     font-weight: 400;
 }
 
-/* Sinistra: Informazioni di Contatto */
+
 .contact-left {
     width: 50%;
     height: 85%;
@@ -60,7 +60,6 @@
     opacity: 0.7;
 }
 
-/* Destra: Modulo Contatti */
 .contact-right {
     width: 50%;
     display: flex;

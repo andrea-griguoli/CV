@@ -7,8 +7,8 @@
 
 .line-container {
     display: flex;
-    align-items: center; /* Allinea tutto sulla stessa riga */
-    width: 100%; /* Occupa tutta la larghezza disponibile */
+    align-items: center;
+    width: 100%;
 }
 
 .line-left {
@@ -23,7 +23,7 @@
 }
 
 .ag {
-    margin: 0 10px; /* Spazio ai lati della sigla */
+    margin: 0 10px;
     color: white;
     font-size: 48px;
     white-space: nowrap;
@@ -39,16 +39,16 @@
 
 .buttons {
     display: flex;
-    justify-content: space-evenly;  /* Disposizione orizzontale dei bottoni */
+    justify-content: space-evenly;
     width: 80%;
 }
 
 .navbar-button, .navbar-button-active {
-    all: unset;  /* Rimuove tutti gli stili di base del bottone */
-    background-color: transparent;  /* Rimuove il colore di sfondo */
-    border: none;  /* Rimuove il bordo */
-    color: #7e7e7e;  /* Colore del testo grigio */
-    padding: 20px 80px;  /* Padding desiderato */
+    all: unset;
+    background-color: transparent;
+    border: none;
+    color: #7e7e7e;
+    padding: 20px 80px;
     font-size: 20px;
     cursor: pointer;
     font-family: "Bigshot One", serif;
@@ -57,9 +57,9 @@
 }
 
 .navbar-button:hover {
-    background-color: transparent;  /* Nessun cambiamento al passaggio del mouse */
-    color: #7e7e7e;  /* Nessun cambiamento nel colore del testo */
-    border: none;  /* Nessun cambiamento nel bordo */
+    background-color: transparent;
+    color: #7e7e7e;
+    border: none;
 }
 
 .navbar-button-active {

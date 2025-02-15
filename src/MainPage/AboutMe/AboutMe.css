@@ -25,7 +25,7 @@
 }
 .buttons-about{
     display: flex;
-    flex-direction: column; /* Dispone i bottoni in colonna */
+    flex-direction: column;
     margin-right: 20px;
     margin-left: 10px;
     height: 80%;
@@ -34,7 +34,7 @@
     background-color: transparent;
     width: 250px;
     flex: 1;
-    margin-bottom: 20px; /* Distanza tra i bottoni */
+    margin-bottom: 20px;
     padding: 2px;
     border-radius: 4px;
     border: 3px solid #515151;
@@ -66,7 +66,7 @@
 
 
 .text-container {
-    flex: 1; /* Occupa il resto dello spazio disponibile */
+    flex: 1;
     border: 4px solid white;
     box-shadow: 0px 4px 4px 8px rgba(0, 0, 0, 0.25);
     height: 100%;
@@ -105,8 +105,8 @@
     color: white;
     left: 20px;
     overflow-y: scroll;
-    padding: 20px; /* Aggiungi padding per il margine interno */
-    box-sizing: border-box; /* Assicura che il padding non influenzi la larghezza totale */
+    padding: 20px;
+    box-sizing: border-box;
     font-family: "Libre Caslon Display", serif;
     font-weight: 400;
     font-style: normal;
@@ -119,16 +119,16 @@
     margin-top: 20px;
     margin-bottom: 10px;
     text-transform: uppercase;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)); /* Leggera sfumatura */
-    color: white; /* Assicurati che il colore sia visibile */
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1));
+    color: white;
 }
 
 
 .section-content {
     letter-spacing: 0.5px;
     font-size: 18px;
-    margin-bottom: 20px; /* Spaziatura tra i paragrafi */
-    line-height: 1.6; /* Migliora la leggibilità */
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
 .photo-container {
@@ -151,10 +151,10 @@
     justify-content: center;
 }
 .photo {
-    width: 100%; /* Occupa tutta la larghezza del container */
-    height: 100%; /* Occupa tutta l'altezza del container */
-    object-fit: cover; /* Ritaglia l'immagine per riempire il contenitore senza deformarla */
-    border-radius: 2px; /* Stesso effetto arrotondato del container */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
     margin-bottom: 20px;
 }
 
@@ -167,9 +167,9 @@
             rgba(26, 26, 26, 0.98) 32%,
             rgba(70, 70, 70, 0) 68%
     );
-    pointer-events: none; /* Evita che la sfumatura interferisca con gli eventi */
+    pointer-events: none;
 }
-/* Contenitore per il testo sopra l'immagine */
+
 .text-overlay {
     position: absolute;
     top: 69%;
@@ -177,28 +177,27 @@
     flex-direction: column;
     color: white;
     width: 100%;
-    justify-content: center; /* Centra verticalmente */
-    align-items: center; /* Centra orizzontalmente */
+    justify-content: center;
+    align-items: center;
 }
 
-/* Stile delle righe di testo */
 .row-text {
     display: flex;
     justify-content: space-between;
     font-family: "Bigshot One", serif;
     font-weight: 400;
-    align-items: center; /* Allinea verticalmente il testo */
+    align-items: center;
     width: 80%;
 }
 
-/* Stile per i testi */
+
 .pre-text {
     font-size: 20px;
     color: #ffffff;
     font-weight: 600;
-    min-width: 120px; /* Assicura che tutti abbiano la stessa larghezza */
-    text-align: left; /* Allinea il testo a destra */
-    flex: 1; /* Occupa lo spazio in modo proporzionato */
+    min-width: 120px;
+    text-align: left;
+    flex: 1;
     letter-spacing: 1px;
 }
 .specific-text {
@@ -212,7 +211,7 @@
     align-items: center;
 }
 
-/* Wrapper per tutto il contenuto */
+
 .education-wrapper {
     width: 90%;
     height: 100%;
@@ -226,13 +225,12 @@
     top: 15px;
 }
 
-/* Ogni elemento educazione (high school, bachelor's, master's) */
+
 .education-item {
-    margin-bottom: 30px; /* Distanza tra le sezioni */
+    margin-bottom: 30px;
     position: relative;
 }
 
-/* Titolo della sezione (high school, bachelor's, master's) */
 .education-title {
     font-size: 22px;
     font-weight: bold;
@@ -240,7 +238,7 @@
     margin-bottom: 10px;
     text-transform: uppercase;
     color: white;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)); /* Leggera sfumatura */
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1));
     padding: 5px;
 }
 .education-title span{
@@ -249,12 +247,11 @@
     font-style: italic;
 }
 
-/* Dettagli dell'educazione */
 .education-details {
     margin-bottom: 20px;
 }
 
-/* Il titolo della laurea */
+
 .education-degree {
     font-size: 18px;
     letter-spacing: 1px;
@@ -263,7 +260,6 @@
     font-weight: 400;
 }
 
-/* L'istituzione che ha concesso il titolo */
 .education-institution {
     font-size: 16px;
     color: white;
@@ -271,30 +267,29 @@
     font-weight: 400;
 }
 
-/* Contenitore per la clessidra, per posizionarla accanto al titolo del Master's degree */
 .hourglass-container {
     position: absolute;
-    right: 0; /* Allinea a destra */
+    right: 0;
     top: -16px;
 }
 
-/* Aggiunta di uno stile per la clessidra */
+
 .hourglass-container svg {
     width: 20px;
     height: 20px;
 }
 .pdf-container {
     width: 90%;
-    max-width: 800px; /* Limita la larghezza per una migliore leggibilità */
-    margin: 20px auto; /* Centra il contenitore nella pagina */
-    background: transparent; /* Sfondo leggero e trasparente */
+    max-width: 800px;
+    margin: 20px auto;
+    background: transparent;
     border-radius: 10px;
     font-family: "Libre Caslon Display", serif;
     letter-spacing: 1px;
     overflow-y: scroll;
 }
 
-/* Ogni link ai PDF */
+
 .pdf-item {
     display: flex;
     align-items: center;
@@ -343,18 +338,18 @@
 
 
 
-/* Personalizzazione della barra di scorrimento */
+
 .text::-webkit-scrollbar, .pdf-container::-webkit-scrollbar {
-    width: 8px; /* Larghezza della barra */
-    height: 5px; /* L'altezza della barra orizzontale, se visibile */
+    width: 8px;
+    height: 5px;
 }
 
-/* "Track" della barra di scorrimento */
+
 .text::-webkit-scrollbar-track .pdf-container::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1); /* Colore di sfondo del track */
-    border-radius: 10px; /* Arrotonda gli angoli del track */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 /* Effetto hover sul thumb */
 .text::-webkit-scrollbar-thumb, .pdf-container::-webkit-scrollbar-thumb {
-    background: rgba(255, 255, 255, 0.9); /* Colore del thumb al passaggio del mouse */
+    background: rgba(255, 255, 255, 0.9);
 }
