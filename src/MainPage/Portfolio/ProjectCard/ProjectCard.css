@@ -1,0 +1,81 @@
+.left-card {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    font-family: "Bigshot One", serif;
+    font-size:26px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+
+.card-image {
+    width: 100%;
+    height: 30%;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image covers the container while maintaining its aspect ratio */
+}
+
+.left-card p {
+    font-size: 24px;
+    color: #ddd;
+    line-height: 1.4;
+    margin-top: 10px;
+}
+
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.tech-badge {
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    position: absolute;  /* Ancoriamo i bottoni al fondo */
+    bottom: 20px;        /* Distanza dal fondo del contenitore */
+    left: 50%;           /* Centrato orizzontalmente */
+    transform: translateX(-50%); /* Correzione del centering */
+    width: 100%;         /* I bottoni occupano tutta la larghezza disponibile */
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px;
+    padding: 15px 20px; /* Più stretto rispetto alla versione precedente */
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    width: 80%; /* Fai sì che i bottoni occupino la larghezza del contenitore */
+    font-size: 14px; /* Font più piccolo */
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
