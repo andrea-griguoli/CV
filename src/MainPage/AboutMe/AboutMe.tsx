@@ -35,30 +35,30 @@ const AboutMe = () =>{
                             <div className="text">
                                 <div className="section-content">
                                     Hi, my name is Andrea Griguoli. I am a recent graduate in Computer Science,
-                                    currently having my first experiences in working.
+                                    currently gaining my first professional experiences.
                                 </div>
 
                                 <div className="section-title">Future Goals</div>
                                 <div className="section-content">
                                     My goal is to continue my studies with a master’s degree to become an engineer
-                                    specialized in cybersecurity and acquire skills highly advanced in this sector.
+                                    specialized in cybersecurity and acquire highly advanced skills in this field.
                                 </div>
 
                                 <div className="section-title">Personal Traits</div>
                                 <div className="section-content">
                                     I am a motivated person and determined, with a strong propensity for teamwork and
-                                    constructive confrontation, always looking for stimuli and innovative ideas.
+                                    constructive engagement, always looking for new challanges and innovative ideas.
                                 </div>
 
                                 <div className="section-title">Hobbies and Interests</div>
                                 <div className="section-content">
-                                    I love putting myself in play by facing new experiences that can enrich me both
+                                    I love challenging myself facing new experiences that can enrich me both
                                     personally and professionally.
                                 </div>
 
                                 <div className="section-title">Interests</div>
                                 <div className="section-content">
-                                    My interests include sport, technology, and cinema, which help me maintain a balance
+                                    My interests include sports, technology, and cinema, which help me maintain a balance
                                     between human growth and professional development.
                                 </div>
                             </div>
@@ -126,17 +126,14 @@ const AboutMe = () =>{
                                         <div className="education-item">
                                             <div className="education-title">English</div>
                                             <div className="education-details">
-                                                <div className="education-degree"> Pre-advanced. Cambridge Certification B1
+                                                <div className="education-degree"> Advanced written and spoken English
                                                 </div>
                                             </div>
-                                            <div className="education-item">
-                                                <div className="education-title">English</div>
-                                                <div className="education-details">
-                                                    <div className="education-degree">Advanced IELTS Test</div>
-                                                </div>
-                                                <div className="hourglass-container">
-                                                    <Hourglass/>
-                                                </div>
+                                        </div>
+                                        <div className="education-item">
+                                            <div className="education-title">Italian</div>
+                                            <div className="education-details">
+                                                <div className="education-degree">Native speaker</div>
                                             </div>
                                         </div>
                                     </div>

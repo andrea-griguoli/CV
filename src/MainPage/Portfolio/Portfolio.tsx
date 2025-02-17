@@ -14,7 +14,7 @@ const Portfolio = () =>{
                 'A web app to represent the cultural events of a place you want to visit. ' +
                 'A tool to improve integration and discovery of cultures and places',
             technologies: ['React','TypeScript', 'CSS', 'HTML', 'Springboot'],
-            githubLink: 'https://github.com/andrea-griguoli/KnoWhere', imageUrl: '/KnoWhere-f.png'},
+            githubLink: 'https://github.com/andrea-griguoli/KnoWhere', imageUrl: '/KnoWhere-f.png', videoDemo:"/reg.mp4"},
         { title: 'Project 2', description: '', technologies: [], githubLink: '#' },
         { title: 'Project 2', description: '', technologies: [], githubLink: '#' },
         { title: 'Project 2', description: '', technologies: [], githubLink: '#' },
@@ -39,6 +39,7 @@ const Portfolio = () =>{
                         technologies={projectsData[activeProject].technologies}
                         githubLink={projectsData[activeProject].githubLink}
                         imageUrl={projectsData[activeProject].imageUrl}
+                        videoDemo={projectsData[activeProject].videoDemo}
                     />
                 )}
             </div>
@@ -50,15 +51,16 @@ const Portfolio = () =>{
                         onClick={() => handleContainerClick(index)}
                     >
                         {project.imageUrl && (
-                            <div
-                                className="img-container"
-                            >
-                                <img
-                                    src={project.imageUrl}
-                                    alt={project.title}
-                                    className="img-li"
-                                />
-                            </div>
+                            <>
+                                <div
+                                    className="img-container"
+                                >
+                                    <img
+                                        src={project.imageUrl}
+                                        alt={project.title}
+                                        className="img-li"/>
+                                </div>
+                            </>
                         )}
                     </div>
                 ))}
