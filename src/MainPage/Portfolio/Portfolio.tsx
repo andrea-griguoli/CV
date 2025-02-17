@@ -9,7 +9,7 @@ const Portfolio = () =>{
     const projectsData = [
         { title: 'TONight', description: 'A university project created to manage and inform about Turin\'s night life. ' +
                 'It includes the management of events in the major discos in Turin', technologies: ['React', 'TypeScript', 'JavaServlet', 'CSS', 'HTML'],
-            githubLink: 'https://github.com/andrea-griguoli/TOnight', imageUrl: '/TO.png'},
+            githubLink: 'https://github.com/andrea-griguoli/TOnight', imageUrl: '/TO.png', videoDemo:"/reg_to.mp4"},
         { title: 'KnoWhere', description: '\n' +
                 'A web app to represent the cultural events of a place you want to visit. ' +
                 'A tool to improve integration and discovery of cultures and places',
