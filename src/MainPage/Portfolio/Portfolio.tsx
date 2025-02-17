@@ -14,7 +14,7 @@ const Portfolio = () =>{
                 'A web app to represent the cultural events of a place you want to visit. ' +
                 'A tool to improve integration and discovery of cultures and places',
             technologies: ['React','TypeScript', 'CSS', 'HTML', 'Springboot'],
-            githubLink: 'https://github.com/andrea-griguoli/KnoWhere', imageUrl: '/KnoWhere-f.png', videoDemo:"/reg.mp4"},
+            githubLink: 'https://github.com/andrea-griguoli/KnoWhere', imageUrl: '/kno.png', videoDemo:"/reg.mp4"},
         { title: 'Project 2', description: '', technologies: [], githubLink: '#' },
         { title: 'Project 2', description: '', technologies: [], githubLink: '#' },
         { title: 'Project 2', description: '', technologies: [], githubLink: '#' },
