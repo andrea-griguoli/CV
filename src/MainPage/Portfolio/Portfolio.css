@@ -17,7 +17,7 @@
     grid-template-rows: 1fr 1fr;
     gap: 20px;
 
-    overflow-y: auto;
+    overflow-y: none;
     max-height: 72%;
 }
 
@@ -31,7 +31,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow-x: auto;
+    overflow-x: none;
+    overflow-y: none;
 }
 
 .project-container:hover{
