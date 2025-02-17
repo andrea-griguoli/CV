@@ -30,7 +30,7 @@ const ProjectCard: React.FC<ProjectProps> = ({
                 </div>
                 <div className="video-container">
                     {videoDemo && (
-                        <video controls={true} muted={true} autoPlay={true} className="project-video">
+                        <video key={videoDemo} controls={true} muted={true} autoPlay={true} className="project-video">
                             <source src={videoDemo} type="video/mp4"/>
                             Il tuo browser non supporta il tag video.
                         </video>
