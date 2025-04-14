@@ -77,7 +77,7 @@ const AboutMe = () =>{
                                 <div className="education-item">
                                     <div className="education-title">Bachelor's degree <span>2021 - 2025</span></div>
                                     <div className="education-details">
-                                        <div className="education-degree">Graduate in computer science 100/110</div>
+                                        <div className="education-degree">Graduate in computer science 101/110</div>
                                         <div className="education-institution">Università degli studi di Torino,
                                             Torino
                                         </div>
